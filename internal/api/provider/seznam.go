@@ -66,7 +66,7 @@ func (g seznamProvider) GetOAuthToken(ctx context.Context, code string, opts ...
 }
 
 func (g seznamProvider) RequiresPKCE() bool {
-	return false
+	return true
 }
 
 func (g seznamProvider) GetUserData(ctx context.Context, tok *oauth2.Token) (*UserProvidedData, error) {
