@@ -674,6 +674,9 @@ func (a *API) Provider(ctx context.Context, name string, scopes string) (provide
 	case "spotify":
 		pConfig = config.External.Spotify
 		p, err = provider.NewSpotifyProvider(pConfig, scopes)
+	case "seznam":
+		pConfig = config.External.Seznam
+		p, err = provider.NewSeznamProvider(pConfig, scopes)
 	case "slack":
 		pConfig = config.External.Slack
 		p, err = provider.NewSlackProvider(pConfig, scopes)
