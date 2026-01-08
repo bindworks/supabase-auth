@@ -13,7 +13,7 @@ import (
 const (
 	defaultSeznamAuthURL  = "https://login.szn.cz/api/v1/oauth/auth"
 	defaultSeznamTokenURL = "https://login.szn.cz/api/v1/oauth/token"
-	defaultSeznamUserURL  = "https://login.szn.cz/api/v1/user"
+	defaultSeznamUserURL  = "login.szn.cz/api/v1/user"
 )
 
 type seznamProvider struct {
