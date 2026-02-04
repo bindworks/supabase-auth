@@ -3,7 +3,7 @@ ENV GO111MODULE=on
 ENV CGO_ENABLED=0
 ENV GOOS=linux
 
-RUN apk add --no-cache make git bash
+RUN apk add --no-cache make git bash build-base
 
 WORKDIR /go/src/github.com/supabase/auth
 
